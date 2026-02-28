@@ -1,0 +1,113 @@
+body {
+    background-color: black;}
+
+
+h1 {
+    color: red;
+    text-align: center;}
+
+
+#bilgiEkrani {
+    color: lime;
+    text-align: center;}
+
+
+#butonKutusu {
+    text-align: center;}
+
+
+#baslatBtn {
+    background-color: #ff4500;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 30px; /* Yanındaki butonla arasına boşluk koyar */
+}
+
+
+#durdurBtn {
+    background-color: #555555;
+    color: white;
+    padding: 15px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;}
+
+
+ #sogutBtn {
+    background-color: rgb(10, 10, 99) ;
+    color: rgb(249, 249, 249);
+    padding: 15px 32px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#grafikEkseni {
+    width: 100px;
+    height: 200px; /* Maksimum boy */
+    border-left: 3px solid black; /* Y Ekseni çizgisi */
+    border-bottom: 3px solid black; /* X Ekseni çizgisi */
+    margin-top: 20px;
+    position: relative; /* İçindeki çubuğu tutmak için */
+}
+
+/* İçerideki Hareketli Sıcaklık Çubuğu */
+#sicaklikCubugu {
+    width: 50px;
+    height: 0px; /* Başlangıçta boyu sıfır, bunu JS ile uzatacağız! */
+    background-color: lime;
+    position: absolute;
+    bottom: 0; /* Çubuk aşağıdan yukarı uzasın diye dibe yapıştırıyoruz */
+    left: 20px;
+    transition: height 0.5s, background-color 0.5s; /* Animasyonlu uzama */
+} 
+#zamanEkrani {
+    /* Derin lacivert ve siyah arası şık bir geçiş */
+    background: linear-gradient(145deg, #0a0a63, #000000); 
+    
+    /* Neon yeşili dijital yazı tipi rengi */
+    color: #00ff41; 
+    
+    /* Modern, yumuşatılmış köşeler */
+    border-radius: 12px; 
+    
+    /* İç boşluk ve yerleşim */
+    padding: 15px 32px;
+    display: inline-block;
+    margin: 10px 0;
+    
+    /* Dijital saat hissi için monospace yazı tipi */
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 1.1rem;
+    font-weight: bold;
+    
+    /* Hafif dış ışıma (Glow) efekti */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6), inset 0 0 5px rgba(0, 255, 65, 0.2);
+    
+    /* Hafif beyaz bir kenarlık (Cam efekti için) */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    
+    /* Yazılar arası boşluk ve şıklık */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+/* Mouse ile üzerine gelince küçük bir parlama efekti */
+#zamanEkrani:hover {
+    box-shadow: 0 6px 20px rgba(0, 255, 65, 0.3);
+    transform: translateY(-2px);
+}
+
+
+
+
+
+    
+
+
+
