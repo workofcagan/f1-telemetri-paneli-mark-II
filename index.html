@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
 
+<link rel="manifest" href="manifest.json">
+
+<link rel="apple-touch-icon" href="icon.png">
+
 <script>
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('sw.js');
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js')
+        .then(reg => console.log('Sistem Hazır: Uygulama Kaydedildi!', reg))
+        .catch(err => console.log('Hata: Uygulama Kaydedilemedi!', err));
+    });
   }
 </script>
 </head>
